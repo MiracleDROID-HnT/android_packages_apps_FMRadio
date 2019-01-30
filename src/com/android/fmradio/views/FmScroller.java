@@ -849,13 +849,13 @@ public class FmScroller extends FrameLayout {
                     } else {
                         viewHolder.mPlayIndicator.stopAnimation();
                     }
-                    viewHolder.mStationFreq.setTextColor(Color.parseColor("#607D8B"));
+                    viewHolder.mStationFreq.setTextColor(getResources().getColor(R.color.station_freq_color_playing));
                     viewHolder.mStationFreq.setAlpha(1f);
                     viewHolder.mStationName.setMaxLines(1);
                 } else {
                     viewHolder.mPlayIndicator.setVisibility(View.GONE);
                     viewHolder.mPlayIndicator.stopAnimation();
-                    viewHolder.mStationFreq.setTextColor(Color.parseColor("#000000"));
+                    viewHolder.mStationFreq.setTextColor(getResources().getColor(R.color.station_freq_color));
                     viewHolder.mStationFreq.setAlpha(0.87f);
                     viewHolder.mStationName.setMaxLines(2);
                 }
